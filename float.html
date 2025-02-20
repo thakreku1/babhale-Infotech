@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chania City Guide</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        .top-bar, .bottom-bar {
+            background-color: grey;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 15px;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            background-color: #33b5e5;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .sidebar li:hover {
+            background-color: #0099cc;
+        }
+
+        .main-content {
+            width: 75%;
+            padding: 15px;
+        }
+
+        .main-content h1 {
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar, .main-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="top-bar">
+        <h1>Chania City</h1>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li>Flights</li>
+                <li>City Life</li>
+                <li>Island Views</li>
+                <li>Food Culture</li>
+            </ul>
+        </nav>
+
+        <section class="main-content">
+            <h1>Explore the City</h1>
+            <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided into two parts: the old town and the modern city.</p>
+            <p>More details on web layouts and responsive design will be covered in upcoming sections.</p>
+        </section>
+    </div>
+
+    <footer class="bottom-bar">
+        <p>© 2025 Chania Travel Guide</p>
+    </footer>
+
+</body>
+</html>

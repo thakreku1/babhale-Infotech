@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proinsure</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: sans-serif;
+    }
+
+    .wrapper {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .navbar {
+      height: 70px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .menu {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .menu a {
+      color: black;
+      padding: 10px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      color: white;
+      background-color: black;
+    }
+
+    .highlight {
+      border: 1px solid gray;
+    }
+
+    .content {
+      width: 70%;
+      margin: 100px auto 20px;
+      text-align: center;
+      border: 1px solid black;
+      padding: 10px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="navbar">
+      <div class="logo">
+        <h2>Proinsure</h2>
+      </div>
+      <div class="menu">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+        <a href="#" class="highlight">VIEW PLANS</a>
+      </div>
+    </nav>
+    
+    <section class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam nihil ex est laborum corrupti...</section>
+    <section class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia consequuntur earum...</section>
+    <section class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem non maxime...</section>
+    <section class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam nihil ex est laborum corrupti...</section>
+    <section class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia consequuntur earum...</section>
+    <section class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem non maxime...</section>
+  </div>
+</body>
+</html>

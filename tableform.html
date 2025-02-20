@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background: white;
+            padding: 20px;
+            max-width: 450px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-title {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .input-group {
+            margin-bottom: 12px;
+        }
+
+        .input-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .input-field, .textarea-field, .select-field {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .butt {
+            background-color: rgb(132, 69, 69);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .button:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1 class="form-title">User Registration</h1>
+        <form>
+            <div class="input-group">
+                <label for="first-name" class="input-label">First Name*</label>
+                <input type="text" id="first-name" name="firstName" class="input-field" required placeholder="Enter your first name">
+            </div>
+
+            <div class="input-group">
+                <label for="last-name" class="input-label">Last Name*</label>
+                <input type="text" id="last-name" name="lastName" class="input-field" required>
+            </div>
+
+            <div class="input-group">
+                <label for="user-password" class="input-label">Password*</label>
+                <input type="password" id="user-password" name="password" class="input-field" required>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password" class="input-label">Re-enter Password*</label>
+                <input type="password" id="confirm-password" name="rePassword" class="input-field" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email-address" class="input-label">Email*</label>
+                <input type="email" id="email-address" name="email" class="input-field" required>
+            </div>
+
+            <div class="input-group">
+                <label for="phone-number" class="input-label">Mobile*</label>
+                <input type="tel" id="phone-number" name="mobile" class="input-field" required>
+            </div>
+
+            <div class="input-group">
+                <label for="user-address" class="input-label">Address*</label>
+                <textarea id="user-address" name="address" rows="3" class="textarea-field" required></textarea>
+            </div>
+
+            <div class="input-group">
+                <label class="input-label">Select Gender*</label>
+                <div class="radio-group">
+                    <input type="radio" id="gender-male" name="gender" value="male" required>
+                    <label for="gender-male">Male</label>
+                    <input type="radio" id="gender-female" name="gender" value="female">
+                    <label for="gender-female">Female</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label class="input-label">Select Hobbies</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="hobby-cricket" name="hobbies[]" value="cricket">
+                    <label for="hobby-cricket">Cricket</label>
+                    <input type="checkbox" id="hobby-drawing" name="hobbies[]" value="drawing">
+                    <label for="hobby-drawing">Drawing</label>
+                    <input type="checkbox" id="hobby-hockey" name="hobbies[]" value="hockey">
+                    <label for="hobby-hockey">Hockey</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="date-of-birth" class="input-label">Date of Birth*</label>
+                <input type="text" id="date-of-birth" name="dob" class="input-field" placeholder="dd-mm-yyyy" required>
+            </div>
+
+            <div class="input-group">
+                <label for="user-country" class="input-label">Country*</label>
+                <select id="user-country" name="country" class="select-field" required>
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="profile-image" class="input-label">Upload Image</label>
+                <input type="file" id="profile-image" name="picture" class="input-field">
+            </div>
+
+            <div class="button-container">
+                <button type="submit" class="butt">Save My Data</button>
+                <button type="reset" class="butt">Reset Data</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
